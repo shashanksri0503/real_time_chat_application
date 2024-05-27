@@ -1,0 +1,165 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://imgs.search.brave.com/KXXub0Ya9VhGCG-HZMEZQWrv89IHNao1y6w3ZD6JKCk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cmQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzA0L0dl/dHR5SW1hZ2VzLTkz/NjE3NjU0Ni5qcGc");
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 40px;
+    font-style: normal;
+    font-family: fantasy;
+}
+
+.container {
+    max-width: 955px;
+    border: 2px solid black;
+    border-radius: 13px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-position: 30%;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 9px;
+}
+
+.message {
+    background-color: #a517f1c7;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initial position */
+    animation: messageIn 0.5s forwards; /* Animation effect */
+}
+
+.message.left {
+    float: left;
+    clear: both;
+}
+
+.message.right {
+    float: right;
+    clear: both;
+}
+
+@keyframes messageIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#send-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    max-width: 1085px;
+    width: 100%;
+    text-align: center;
+}
+
+#messageInp {
+    width: 85%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    font-size: 22px;
+    font-family: unset;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+    #messageInp {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #messageInp {
+        width: 75%;
+        font-size: 18px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #messageInp {
+        width: 70%;
+        font-size: 16px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #messageInp {
+        width: 65%;
+        font-size: 14px;
+        height: 26px;
+    }
+}
+
+.btn {
+    width: 7%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 43px;
+    background-color: plum;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(172, 6, 136);
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1080px) {
+    .btn {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 15%;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        width: 20%;
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn {
+        width: 25%;
+        height: 30px;
+    }
+}
